@@ -7,16 +7,16 @@ Provides an API for permanent storage of incoming messages. This currently uses 
 
 A postgres database and the following environment variable:
 
-* DB_NAME
-* DB_USER
-* DB_PASS
-* DB_HOST
-* DB_PORT
-* DB_SSL (boolean)
+* DATABASE_NAME
+* DATABASE_USER
+* DATABASE_PASS
+* DATABASE_HOST
+* DATABASE_PORT
+* DATABASE_SSL (probally 'disable')
 
 ## Schema
 
-This is the minimum postgres schema currently for using this:
+This is the minimum postgres schema currently for using this. You will need the 'uuid-ossp' extension installed.
 
 ```sql
 CREATE TABLE accounts(
